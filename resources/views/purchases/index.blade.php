@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>Historial de Compras</h1>
+        <h1>Historial de Ventas</h1>
         <a href="{{ route('purchases.create') }}" class="btn btn-success">
-            <i class="fas fa-plus me-2"></i>Nueva Compra
+            <i class="fas fa-plus me-2"></i>Nueva Venta
         </a>
     </div>
 
@@ -58,7 +58,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body">
-                                        ¿Estás seguro de eliminar esta compra?
+                                        ¿Estás seguro de eliminar esta Venta?
                                         <ul class="mt-2">
                                             <li>Cliente: {{ $purchase['client']->name }}</li>
                                             <li>Producto: {{ $purchase['product']->name }}</li>

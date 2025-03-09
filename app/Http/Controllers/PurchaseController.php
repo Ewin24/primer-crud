@@ -60,7 +60,7 @@ class PurchaseController extends Controller
         $product->save();
 
         return redirect()->route('purchases.index')
-            ->with('success', 'Compra registrada exitosamente');
+            ->with('success', 'Venta registrada exitosamente');
     }
 
     public function edit(Client $client, Product $product)
@@ -112,7 +112,7 @@ class PurchaseController extends Controller
         ]);
 
         return redirect()->route('purchases.index')
-            ->with('success', 'Compra actualizada correctamente');
+            ->with('success', 'Venta actualizada correctamente');
     }
 
     public function destroy($clientId, $productId)
@@ -128,6 +128,6 @@ class PurchaseController extends Controller
         $client->products()->detach($productId);
 
         return redirect()->route('purchases.index')
-            ->with('success', 'Compra eliminada correctamente');
+            ->with('success', 'Venta eliminada correctamente');
     }
 }

@@ -4,7 +4,7 @@
 <div class="container">
     <div class="card shadow-lg">
         <div class="card-header bg-warning text-white">
-            <h4 class="mb-0"><i class="fas fa-edit me-2"></i>Editar Compra</h4>
+            <h4 class="mb-0"><i class="fas fa-edit me-2"></i>Editar Venta</h4>
         </div>
         <div class="card-body">
             <form action="{{ route('purchases.update', ['client' => $purchase['client']->id, 'product' => $purchase['product']->id]) }}" method="POST">

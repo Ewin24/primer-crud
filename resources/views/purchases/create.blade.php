@@ -4,7 +4,7 @@
 <div class="container">
     <div class="card shadow-lg">
         <div class="card-header bg-primary text-white">
-            <h4 class="mb-0"><i class="fas fa-cart-plus me-2"></i>Registrar Nueva Compra</h4>
+            <h4 class="mb-0"><i class="fas fa-cart-plus me-2"></i>Registrar Nueva Venta</h4>
         </div>
         <div class="card-body">
             <form action="{{ route('purchases.store') }}" method="POST">
@@ -13,7 +13,7 @@
                 <!-- Sección de errores generales -->
                 @if($errors->any())
                     <div class="alert alert-danger alert-dismissible fade show">
-                        <h5 class="mb-3">Error en la compra:</h5>
+                        <h5 class="mb-3">Error en la Venta:</h5>
                         <ul class="mb-0">
                             @foreach($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -109,7 +109,7 @@
                         <i class="fas fa-times me-2"></i>Cancelar
                     </a>
                     <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-check me-2"></i>Registrar Compra
+                        <i class="fas fa-check me-2"></i>Registrar Venta
                     </button>
                 </div>
             </form>
